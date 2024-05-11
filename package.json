@@ -1,0 +1,31 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "This app assists managers to track their employees in a databse",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cawooda/employee-tracker.git"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "hr",
+    "and",
+    "payroll"
+  ],
+  "author": "Andrew Cawood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cawooda/employee-tracker/issues"
+  },
+  "homepage": "https://github.com/cawooda/employee-tracker#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "inquirer": "^9.2.20",
+    "jest": "^29.7.0"
+  }
+}
