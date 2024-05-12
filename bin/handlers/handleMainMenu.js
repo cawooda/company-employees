@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const {handleAddDepartment,handleAddEmployee,handleAddRole} = require('./add/add');
-const {handleUpdateDepartment} = require('./update/update');
+const handleUpdateDepartment = require('./update/update');
 const {viewAllDepartments, viewAllRoles,viewAllEmployees} = require('./view/view');
 
 async function handleMainMenu (choice) {
