@@ -18,4 +18,4 @@ const pool = new Pool(
 
 
 
-module.exports = {pool,DIRECTORY};
+module.exports = pool;

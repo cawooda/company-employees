@@ -1,3 +1,5 @@
+\c postgres;
+
 DROP DATABASE IF EXISTS employees_db;
 CREATE DATABASE employees_db;
 
@@ -18,19 +20,22 @@ CREATE TABLE roles (
     id SERIAL PRIMARY KEY,
     title VARCHAR(30),
     salary DECIMAL,
-    department_id INTEGER NOT NULL,
-    FOREIGN KEY (employee_id)
-    REFERENCES employees(id),
-    FOREIGN KEY (department_id)
-    REFERENCES departments(id)
-    ON DELETE SET NULL
+    department_id INTEGER NOT NULL
+    --,
+    -- FOREIGN KEY (department_id)
+    -- REFERENCES departments(id)
+    -- ON DELETE SET NULL
 );
+
 
 CREATE TABLE departments (
     id SERIAL PRIMARY KEY,
     name VARCHAR(30)
-    FOREIGN KEY (role_id)
-    REFERENCES roles(id)
-    ON DELETE SET NULL
+    -- FOREIGN KEY (role_id)
+    -- REFERENCES roles(id)
+    -- ON DELETE SET NULL
 );
+
+
+
 

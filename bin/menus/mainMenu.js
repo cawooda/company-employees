@@ -1,4 +1,4 @@
-const inquirer = require('inquirer');
+
 const menu = require('./menu');
 
 class mainMenu extends menu {

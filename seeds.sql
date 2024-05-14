@@ -1,4 +1,4 @@
-INSERT INTO employees (id,first_name,last_name,role_id,manager_id)
+INSERT INTO employees (first_name,last_name,role_id,manager_id)
     VALUES
         ("James","Hobb",1,1)
         ("Jeremy","Hobb",2,2)
@@ -16,7 +16,7 @@ INSERT INTO departments (name)
         ("Excecutive")
         ("Administration")
 
-INSERT INTO roles (title,salary,department)
+INSERT INTO roles (title,salary,employee_id,department_id)
     VALUES  
         ("CEO",1000,1)
         ("Excecutive Assistant",500,1)

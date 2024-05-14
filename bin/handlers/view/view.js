@@ -1,19 +1,11 @@
 
 require('dotenv').config();
-const { Pool } = require('pg');
+
+// const pool = require('../../../config/connection');
+const pool = require('@config/connection');
 
 
-const pool = new Pool(
-    {
-      user: process.env.DB_USERNAME,
-      // TODO: Enter PostgreSQL password
-      password: process.env.DB_PASSWORD,
-      host: process.env.DB_HOST,
-      database: process.env.DB_DATABASE
-    },
-    console.log(`Connected to the books_db database.`)
-  )
-
+console.log("pool",pool);
 function viewAllDepartments () {
     pool.connect();
     pool.query(`SELECT * from departments`, (err, {rows}) => {
