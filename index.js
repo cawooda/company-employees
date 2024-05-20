@@ -9,12 +9,16 @@ const mainMenuChoices = [
     "add a department", 
     "add a role", 
     "add an employee", 
-    "update an employee role"
+    "update an employee"
     ]; 
+
+function startAgain(){
+    main();
+}
 
 async function main() {
     const main = new mainMenu("Employee Tracker ->",mainMenuChoices);
-    await main.run(handleMainMenu);
+    await main.run(handleMainMenu,startAgain);
 }
 
 main();

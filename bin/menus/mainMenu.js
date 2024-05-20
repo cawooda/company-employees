@@ -2,7 +2,7 @@
 const menu = require('./menu');
 
 class mainMenu extends menu {
-    constructor (menuTitle,choices) {
+    constructor (menuTitle,choices,cb) {
         super(menuTitle,choices);
     }    
 }

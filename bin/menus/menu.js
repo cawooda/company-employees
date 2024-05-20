@@ -2,7 +2,8 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 class menu {
-    constructor (menuTitle,choices) {
+    constructor (menuTitle,choices,cb) {
+        this.endAndStartAgain = cb;
         this.choices = choices;
         this.menuQuestion = {
                 type : "list",
@@ -11,9 +12,10 @@ class menu {
                 choices : choices
         }
     }
-    async run (cb) {
+    async run (cbHandle,then) {
         const data = await inquirer.prompt(this.menuQuestion);
-        cb(data.userChoice);
+        await cbHandle(data.userChoice,then);
+        
     }
 }
 
