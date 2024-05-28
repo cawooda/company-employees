@@ -12,7 +12,7 @@ async function viewAllDepartments () {
             SELECT d.id,d.name
             FROM departments AS d
         `,(err,{rows})=>{
-            
+            console.log('\n');
             showTable(rows);
             console.log('press <DOWN ARROW> for Menu');    
         });
@@ -39,7 +39,7 @@ function viewAllRoles () {
             ON 
                 r.department_id = d.id;
         `,(err,{rows})=>{
-            
+            console.log('\n');
             showTable(rows);
             console.log('press <DOWN ARROW> for Menu');    
         });

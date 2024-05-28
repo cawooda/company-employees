@@ -6,8 +6,6 @@ class form {
         //accepts a list of questions
         //calls back so the menu can start again.
         this.runCallBack = cb;
-        console.log("form called",this);
-        console.log("questions in form",this.questions);
         this.formQuestions = questions.map((question)=>{
             return {
                 type : question.type ? question.type : 'input',

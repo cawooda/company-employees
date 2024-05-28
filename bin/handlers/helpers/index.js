@@ -47,7 +47,7 @@ try {
 }
 
 async function getEmployees(){
-    console.log("getEmployees called");
+    
     await pool.connect();
 try {
     var result = await pool.query(`
@@ -63,7 +63,7 @@ try {
             name: item.name,
             value: item.id
         }
-        console.log("choice",choice);
+        
         return choice;
         });
 }

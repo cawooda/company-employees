@@ -5,7 +5,7 @@ const {getDepartments,getEmployees,getRoles} = require('../helpers');
 const pool = require('../../../config');
 
 async function handleAddDepartment (then){
-    console.log("add department reached");
+    
     //formTitle,questions,cb
     const form = new addDepartment('Add Department',[{
         title: 'Department Name',
@@ -13,7 +13,7 @@ async function handleAddDepartment (then){
     }],(data)=>{
         pool.connect();
         try {
-            console.log(data.department_name);
+            
             pool.query(`
                 INSERT into departments (name)
                 VALUES ($1);
@@ -31,7 +31,7 @@ async function handleAddDepartment (then){
 }
 
 async function handleAddEmployee (){
-    console.log("add employee reached");
+    
 
     const form = new addEmployee('Add Employee',[
         {
@@ -73,7 +73,7 @@ async function handleAddEmployee (){
 }
 
 async function handleAddRole (){
-    console.log("add role reached");
+    
     
     
     const form = new addRole('Add Role',[
