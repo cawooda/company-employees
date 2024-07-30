@@ -1,4 +1,7 @@
 # Employee Tracker
+
+![loom video](https://www.loom.com/share/39a7e7d53984440a95f7f9bf0e7e1066?sid=16fe1af3-c41d-45dc-833a-ae4bb375c24f)
+
 ## Description
 
 A CLI employee tracker with a SQL database storing, viewing and updating employees, roles, and departments
@@ -20,13 +23,12 @@ A CLI employee tracker with a SQL database storing, viewing and updating employe
 configure db and login details through /config/connection. Configure .env file. npm i, then npm start
 
 ## Usage
+
 used to track employees
 
 ### Screenshot
 
-
 ![alt text](./assets/images/screenshot.png)
-
 
 ## Features
 
@@ -41,28 +43,21 @@ The current object model is a little clunky. The menu object is there but seems 
 The Bin folder contains Forms, Handlers and Menus.
 These are imported as needed to run the application providing reusability.
 
-
 ## Questions
 
-For questions, please contact <mailto:cawooda@gmail.com> or 
+For questions, please contact <mailto:cawooda@gmail.com> or
 
 view github:
 (
-    [![General badge](https://img.shields.io/badge/Github-profile-green.svg)](https://github.com/http://github.com/cawooda)
-    )
+[![General badge](https://img.shields.io/badge/Github-profile-green.svg)](https://github.com/http://github.com/cawooda)
+)
 <http://github.com/cawooda>
 
 ## License
 
 <https://choosealicense.com/licenses/CC/>
 
-
-        
-    Readme File Generator by Andrew Cawood is marked with CC0 1.0 
+    Readme File Generator by Andrew Cawood is marked with CC0 1.0
     ;
-    
 
 ---
-
-
-  
